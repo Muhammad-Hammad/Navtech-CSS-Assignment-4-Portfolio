@@ -1,0 +1,142 @@
+*{
+    font-family: Muli,sans-serif;
+    margin: 0;
+    /* transition: 2s; */
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width : 7px;
+}
+body::-webkit-scrollbar-track{
+    /* background: #000000; */
+    background: #88ABE3;
+}
+body::-webkit-scrollbar-thumb{
+    /* background: #88ABE3; */
+    /* background: rgba(0, 0, 0, 0.747); */
+    background-color: #ffffff;
+    border-radius: 2px;
+
+}
+.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.815);
+    font-size: larger;
+}
+
+.navigation li{
+    float: right;
+    font-weight: bold;
+}
+.navigation li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    color: #88ABE3;
+    transition: 0.5s;
+    background: #FeFeF6;
+    border-radius: 5px;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;  
+    color: white;
+    height: 700px;
+}
+.grid1:hover{
+    /* background: #aaaaaa; */
+    /* color: #333333;
+    transition: 0.5s ease; */
+}
+
+.grid1 > div { 
+    margin: auto;
+    border-radius: 50px;
+    
+}
+.grid1 div h1{
+    font-size: 72px;
+    transition: 0.5s;
+}
+
+.grid1 div h1:hover{
+    color: rgba(0, 0, 0, 0.747);
+    transition: 0.5s;
+    transition-timing-function: ease;
+    font-size: 82px;
+    /* transition-duration: 3s; */
+}
+
+.invi{
+    visibility: hidden;
+}
+.empty{
+    height: 200px;
+    margin: 0;
+
+    /* border: 1px black solid;s */
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    color: white;
+}
+.grid2 div h1{
+    font-size: 48px;
+}
+.grid2 div p{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    font-size: 24px;
+    text-align: justify;
+}
+.blue{
+    background:  #88ABE3;
+}
+div img{
+    border-radius: 100px;
+    transition: 0.8s ease;
+}
+
+div img:hover{
+    border-radius: 50px;
+}
+h1:hover, p:hover{
+    color: black;
+    transition: 0.5s;
+}
+.skill{
+    list-style-type: none;
+    margin: 5px;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 24px;
+    
+}
+.skill li{
+    float: left;
+    display: inline;
+    position: relative;
+    font-weight: bold;
+    border: 1px white solid;
+    padding: 5px;
+    margin: 2px;
+}
+.skill li:hover{
+    color: black;
+    transition: 0.5s;
+}
+div a {
+    text-decoration: none;
+    color: white;
+}
