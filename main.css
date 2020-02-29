@@ -1,35 +1,41 @@
 *{
     font-family: Muli,sans-serif;
     margin: 0;
-    /* transition: 2s; */
     scroll-behavior: smooth;
 }
 body::-webkit-scrollbar{
     width : 7px;
 }
 body::-webkit-scrollbar-track{
-    /* background: #000000; */
     background: #88ABE3;
 }
 body::-webkit-scrollbar-thumb{
-    /* background: #88ABE3; */
-    /* background: rgba(0, 0, 0, 0.747); */
     background-color: #ffffff;
     border-radius: 2px;
 
+}
+.WD{
+    margin-left: 33%;
 }
 .navigation{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.815);
-    font-size: larger;
+    /* background-color: rgba(255, 255, 255, 0.815); */
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    /* border: 2px black solid; */
+    background: #ffffff;
+    border-radius: 5px;
+    z-index: 1;
 }
 
 .navigation li{
-    float: right;
+    float: left;
     font-weight: bold;
+    /* border: 1px #333333 solid; */
 }
 .navigation li a {
     display: block;
@@ -40,9 +46,9 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navigation li a:hover{
-    color: #88ABE3;
+    color: rgb(136, 171, 227);
     transition: 0.5s;
-    background: #FeFeF6;
+    background: #333333;
     border-radius: 5px;
 }
 .grid1{
@@ -50,11 +56,6 @@ body::-webkit-scrollbar-thumb{
     grid-template-columns: 30% 40% 30%;  
     color: white;
     height: 700px;
-}
-.grid1:hover{
-    /* background: #aaaaaa; */
-    /* color: #333333;
-    transition: 0.5s ease; */
 }
 
 .grid1 > div { 
@@ -72,7 +73,6 @@ body::-webkit-scrollbar-thumb{
     transition: 0.5s;
     transition-timing-function: ease;
     font-size: 82px;
-    /* transition-duration: 3s; */
 }
 
 .invi{
@@ -82,14 +82,13 @@ body::-webkit-scrollbar-thumb{
     height: 200px;
     margin: 0;
 
-    /* border: 1px black solid;s */
 }
 .grid2{
     display: grid;
     grid-template-columns: 20% 60% 20%;
     color: white;
 }
-.grid2 div h1{
+.grid2 div h1, .grid3 div h1{
     font-size: 48px;
 }
 .grid2 div p{
@@ -104,14 +103,14 @@ body::-webkit-scrollbar-thumb{
     background:  #88ABE3;
 }
 div img{
-    border-radius: 100px;
+    border-radius: 200px;
     transition: 0.8s ease;
 }
 
 div img:hover{
     border-radius: 50px;
 }
-h1:hover, p:hover{
+h1:hover, p:hover, p a:hover, h2:hover{
     color: black;
     transition: 0.5s;
 }
@@ -121,6 +120,7 @@ h1:hover, p:hover{
     padding: 20px;
     overflow: hidden;
     font-size: 24px;
+    transition: 0.5s;
     
 }
 .skill li{
@@ -140,3 +140,41 @@ div a {
     text-decoration: none;
     color: white;
 }
+.skill li span{
+    visibility: hidden;
+    width: 200px;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 1vw!important;
+    margin-left: -100px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+ .skill li:hover span{
+      visibility: visible;
+      transition-delay: 0.5s;
+  }
+  .grid3{
+      display: grid;
+      grid-template-columns: 30% 40% 30%;
+      color: white;
+  }
+  .grid3 div p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 22px;
+  }
+  iframe{
+      border-radius: 10px;
+      transition: 0.5s ease;
+  }
+  iframe:hover{
+      /* height: 400px; */
+      width: 600px;
+  }
